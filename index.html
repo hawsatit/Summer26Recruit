@@ -1,17 +1,247 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Concurrent Exercise and Learning Study</title>
-<style>
-body{font-family:Arial,sans-serif;background:#f4f6f8;max-width:900px;margin:40px auto;padding:20px;line-height:1.6}
-main{background:#fff;padding:32px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
-a.button{display:inline-block;background:#2563eb;color:#fff;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
-.notice{margin:20px 0;padding:16px;background:#fff7d6;border-left:5px solid #eab308}
-</style></head><body><main>
-<h1>Concurrent Exercise and Learning Study</h1>
-<p>Help us understand how exercise-induced stress affects learning.</p>
-<div class="notice"><strong>Please schedule your appointments on back-to-back days.</strong><br>
-Example: Day 1 on Tuesday and Day 2 on Wednesday.</div>
-<p><a class="button" href="https://calendly.com/psychlab123/new-meeting" target="_blank">Sign Up on Calendly</a></p>
-<h2>Compensation</h2>
-<ul><li>Day 1 (45–60 min): <strong>$20</strong></li><li>Day 2 (~10 min): <strong>$10</strong></li></ul>
-<h2>Location</h2><p>SCIE 1524</p>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Participant recruitment information for the Concurrent Exercise and Learning study at Grinnell College.">
+  <title>Concurrent Exercise and Learning Study</title>
+  <style>
+    :root {
+      --background: #f5f5f2;
+      --surface: #ffffff;
+      --text: #1f2421;
+      --muted: #5f6862;
+      --border: #d9ddd9;
+      --accent: #a32638;
+      --accent-soft: #f7e9ec;
+      --max-width: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 48px auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 48px;
+    }
+
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+
+    .summary {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 28px;
+      margin-top: 26px;
+      font-size: 0.94rem;
+    }
+
+    .meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    section { margin-top: 36px; }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 14px; }
+
+    .notice {
+      margin-top: 26px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .day {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .day h3 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+    }
+
+    .day p { margin: 6px 0; }
+
+    .pay {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .contact {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .contact p:last-child { margin-bottom: 0; }
+
+    footer {
+      margin-top: 38px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        padding: 30px 22px;
+      }
+
+      .meta,
+      .days { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Psychology Student Experiential Learning Lab</p>
+      <h1>Concurrent Exercise and Learning</h1>
+      <p class="summary">Participate in a two-day research study examining how exercise-induced stress may affect learning.</p>
+
+      <div class="meta" aria-label="Study information">
+        <div><span>Project number</span>18-S26-CON</div>
+        <div><span>Semester</span>Summer 2026</div>
+        <div><span>Faculty sponsor</span>Christopher Conway</div>
+        <div><span>Student researcher</span>Tanadanai Hawsatitam</div>
+      </div>
+    </header>
+
+    <section aria-labelledby="what-to-expect">
+      <h2 id="what-to-expect">What to expect</h2>
+      <p>The study takes place on <strong>two consecutive days</strong>. On Day 1, you will rate your overall fitness level and may be asked to complete two separate 10-minute biking sessions while attending to flashing stimuli on a computer screen.</p>
+      <p>An armband will measure your heart rate throughout the process. You will also provide saliva samples at three separate time points during the experiment.</p>
+      <div class="notice">Please complete both study days so your data can be included in the analysis.</div>
+    </section>
+
+    <section aria-labelledby="time-compensation">
+      <h2 id="time-compensation">Time and compensation</h2>
+      <div class="days">
+        <article class="day">
+          <h3>Day 1</h3>
+          <p><strong>45 minutes to 1 hour</strong></p>
+          <p class="pay">$20 compensation</p>
+        </article>
+        <article class="day">
+          <h3>Day 2</h3>
+          <p><strong>10 minutes</strong></p>
+          <p class="pay">$10 compensation</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="eligibility">
+      <h2 id="eligibility">Eligibility and restrictions</h2>
+      <ul>
+        <li>You must be at least 18 years old.</li>
+        <li>You may participate in this study only once.</li>
+        <li>Do not participate if you have sensitivities to flashing visuals or a visual impairment.</li>
+        <li>Do not participate if you have a medical condition that prohibits moderate exercise, such as a cardiovascular or respiratory condition.</li>
+        <li>Do not participate if you have a current injury that prevents cycling.</li>
+        <li>Do not participate if you use medication known to substantially affect cortisol.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="before-visit">
+      <h2 id="before-visit">Before your visit</h2>
+      <p><strong>Day 1:</strong> Please refrain from eating or drinking anything besides water for 30 minutes before the study begins.</p>
+      <p><strong>Day 2:</strong> You may eat or drink normally before testing.</p>
+    </section>
+
+    <section aria-labelledby="location-contact">
+      <h2 id="location-contact">Location and contact</h2>
+      <div class="contact">
+        <p><strong>Location:</strong> SCIE 1524</p>
+        <p>When scheduled times conflict with your other obligations, contact <strong>Tanadanai Hawsatitam</strong> at <strong>[hawsatit]</strong> to ask about additional times.</p>
+      </div>
+    </section>
+
+
+    <section aria-labelledby="signup">
+      <h2 id="signup">Sign Up</h2>
+      <div class="notice">
+        <p style="margin:0 0 14px;"><strong>Please schedule your two study sessions on back-to-back days</strong> (for example, Monday &amp; Tuesday or Thursday &amp; Friday).</p>
+        <p style="margin:0;">
+          <a href="https://calendly.com/psychlab123/new-meeting" target="_blank" style="display:inline-block;background:#a32638;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px;font-weight:bold;">
+            Sign Up on Calendly
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Research Project 18-S26-CON · Summer 2026
+    </footer>
+  </main>
+</body>
+</html>
